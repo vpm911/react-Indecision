@@ -1,0 +1,35 @@
+.big-button {
+    background: $purple;
+    border: none;
+    border-bottom: 0.6rem solid darken($purple,10%); 
+    color:white;
+    font-size: 3rem;
+    padding: 2.4rem;
+    margin-bottom: 2rem;
+    width:100%; 
+}
+
+// built in directive 'disabled' to change opacity when the button is disabled
+.big-button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+// Add option button
+.button {
+    background-color: $purple;
+    border: none;
+    border-bottom: 0.3rem solid darken($purple,10%);
+    color:white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+
+// BEM convention for modified version of a style element
+// this is to style the remove and remove all buttons
+.button--link{
+    border: none;
+    color: $off-white;
+    background: none;
+}
