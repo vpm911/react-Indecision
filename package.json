@@ -7,7 +7,10 @@
   "scripts": {
     "serve": "live-server public --port=3400",
     "build": "webpack --watch",
-    "build-babel": "babel src/app.js --out-file=public/bundle.js --presets=env,react --watch"
+    "build-babel": "babel src/app.js --out-file=public/bundle.js --presets=env,react --watch",
+	"build:prod": "webpack -p",
+	"start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
